@@ -20,7 +20,7 @@ Window::Window(QWidget *parent) : QMainWindow(parent)
     layout = new QGridLayout;
     
     //title
-    QLabel *titleText = new QLabel("Welcome to Education Land!\nDo you already have an account?");
+    QLabel *titleText = new QLabel("Education");
     //buttons
     yesButton = new QPushButton("Yes");
     noButton = new QPushButton("No");

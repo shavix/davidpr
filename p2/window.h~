@@ -18,10 +18,16 @@ public:
 	~Window();
 
 private:
-	QWidget* window;
+	QPushButton    * btnGen;
+	QPushButton    * btnAbout;
+	QPlainTextEdit * txtWordsInput;
+	QVBoxLayout    * winLayout;
+	QHBoxLayout    * genLayout;
+	QWidget        * centerWidget;
+	/*QWidget* window;
     QPushButton *yesButton;
     QPushButton *noButton;
-    QGridLayout *layout;
+    QGridLayout *layout;*/
 
 };
 
