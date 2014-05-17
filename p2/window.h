@@ -1,35 +1,33 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 #include <QApplication>
-#include <QPushButton>
-#include <QHBoxLayout>
-#include <QVBoxLayout>
-#include <QListWidget>
-#include <QtGui>
-#include <QTCore>
-#include <QLabel>
-#include <QLineEdit>
 #include <QWidget>
+#include <QTextEdit>
+#include <QCloseEvent>
 #include <QMainWindow>
-#include <QMessageBox>
 #include <QPlainTextEdit>
-#include <QString>
-#include <QtGui>
-#include <QHBoxLayout>
-#include <QString>
+#include <QVBoxLayout>
+#include <QPushButton>
+#include <QGridLayout>
 
-class Window: public QWidget
+class Window: public QMainWindow
 {
+	Q_OBJECT
 public:
-	Window(QWidget *parent=NULL);
+	Window(QWidget *parent=0);
 	~Window();
 
-
 private:
-	QWidget* window;
+	QPushButton    * btnGen;
+	QPushButton    * btnAbout;
+	QPlainTextEdit * txtWordsInput;
+	QVBoxLayout    * winLayout;
+	QHBoxLayout    * genLayout;
+	QWidget        * centerWidget;
+	/*QWidget* window;
     QPushButton *yesButton;
     QPushButton *noButton;
-    QGridLayout *layout;
+    QGridLayout *layout;*/
 
 };
 
