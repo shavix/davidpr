@@ -7,8 +7,10 @@
 #include <QMainWindow>
 #include <QPlainTextEdit>
 #include <QVBoxLayout>
+#include <QHBoxLayout>
 #include <QPushButton>
 #include <QGridLayout>
+#include <QLineEdit>
 
 class Window: public QMainWindow
 {
@@ -16,18 +18,20 @@ class Window: public QMainWindow
 public:
 	Window(QWidget *parent=0);
 	~Window();
+	
+	
+public slots:
+	void loginPage();
+	void newAccountPage();
+	void mainPage();
 
 private:
-	QPushButton    * btnGen;
-	QPushButton    * btnAbout;
-	QPlainTextEdit * txtWordsInput;
-	QVBoxLayout    * winLayout;
-	QHBoxLayout    * genLayout;
-	QWidget        * centerWidget;
-	/*QWidget* window;
+	QWidget* window;
     QPushButton *yesButton;
     QPushButton *noButton;
-    QGridLayout *layout;*/
+    QGridLayout *layout;
+    
+  	QLineEdit *enterUsername;
 
 };
 

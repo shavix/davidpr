@@ -1,0 +1,14 @@
+1. Miscellaneous
+	a. using namesapce std
+
+2. Fix menu layout
+	a. close windows
+	b. lign up buttons
+	c. add colors
+	d. add animations
+	
+3. Fix menu->interface connection
+	a. pass in username
+	b. pass in user info
+	
+
